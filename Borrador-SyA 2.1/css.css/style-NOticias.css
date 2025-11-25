@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Franja azul*/
+.top-bar {
+    background-color: #0044cc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Menú lateral */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.sidebar-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.sidebar-content a:hover {
+    background-color: #555;
+}
+
+/* Contenido principal */
+.contenido {
+    margin-left: 120px;
+    padding: 20px;
+}
+
+/* Noticias en filas */
+.fila {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formulario de búsqueda */
+.footer {
+    background-color: #0044cc;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #0044cc;
+    cursor: pointer;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
