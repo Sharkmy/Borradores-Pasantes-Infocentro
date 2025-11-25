@@ -1,0 +1,56 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.sidebar-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.sidebar-content a:hover {
+    background-color: #555;
+}
+
+/* Contenido principal */
+.contenido {
+    margin-left: 120px;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    border: 2px inset rgb(22, 22, 22);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
