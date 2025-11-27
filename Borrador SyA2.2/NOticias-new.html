@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Noticias - El Venezolano</title>
+    <link rel="stylesheet" href="css.css/style-NOticias.css">
+</head>
+<body>
+    <!-- Franja-->
+    <header class="top-bar">
+        <h1>Noticias El Venezolano</h1>
+    </header>
+
+    <!-- Menú plegable -->
+    <div class="sidebar">
+        <button onclick="toggleSidebar()">☰ Menú</button>
+        <div class="sidebar-content" id="sidebar-content">
+            <a href="#">Inicio</a>
+            <a href="#">Internacional</a>
+            <a href="#">Economía</a>
+            <a href="#">Cultura</a>
+            <a href="#">Deportes</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+        <div class="fila">
+            <div class="card">
+                <img src="imagen/Inundacion.jpg" alt="Lluvias en Guarenas">
+                <h2>Lluvias atentan con la comunidad de Guarenas</h2>
+                <p>Los pobladores reportan abundantes lluvias que podrían causar desastre.</p>
+                <!--Va a la noticia mas abajo luego se le implementa un boton :) -->
+                <a href="#Titulo">Ir a la noticia</a>
+            </div>
+            <div class="card">
+                <img src="imagen/Presos.jpg" alt="Presos Tocorón">
+                <h2>Presos escapan de Tocorón</h2>
+                <p>Un hecho que sacudió las estructuras del sistema penitenciario...</p>
+                <a href="#Presos_Tocoron">Ir a la noticia</a>
+            </div>
+            <div class="card">
+                <img src="imagen/Logo infocentro.jpeg" alt="Fundación Infocentro">
+                <h2>Fundación Infocentro a la ofensiva</h2>
+                <p>El plan Infocentro tuvo un aumento positivo en comparación con años anteriores.</p>
+                <a href="#Fundación_infocentro">Ir a la noticia</a>
+            </div>
+        </div>
+    </main>
+
+    <!
+    -- Formulario de búsqueda -->
+    <footer class="footer">
+        <form class="search-form">
+            <input type="text" placeholder="Buscar noticias...">
+            <button type="submit">Buscar</button>
+        </form>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar-content");
+            sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
+        }
+    </script>
+    <br>    
+        <div class id="Titulo">
+            <h1>Lluvias atentan con la comunidad de guarenas</h1>
+            <p>
+            Los pobladores reportan abundantes lluvias que podrian causar mucho desastre.
+            </p>
+        </div>
+    <br>
+        <img src="imagen/Inundacion.jpg" title="Lluvias de Guarenas"  width="500"/><br>      
+        </body>
+    <br>
+        <div class id="Presos_Tocoron">
+            <h2>Presos escapan de Tocorón</h2>
+            <p>Un hecho que ha sacudido a las ya frágiles estructuras del sistema penitenciario,<br> las autoridades confirmaron la fuga de la Penitenciaría General de Venezuela <br> conocida popularmente como Tocorón, de dos reclusos cuya peligrosidad....</p>
+        </div>
+    
+    <button class="button-leer-mas" data-target="extra-1"id="Boton"</button>
+    Leer menos 
+    </button>
+    <br>
+        <div class="contenido-oculto" id="extra-1" style="display: none;"> 
+            <div class="texto"></div>
+            <p>
+            Si bien no se miden en crímenes de la humanidad, reside en su "astucia rural" para evadir la justicia: Cesar Aparicio y Javier, ambos de 40 años. La evasión se <br>
+            produjo en la madrugada de hoy, desatando un despliegue de seguridad que ha sido calificado de "desproporcionado" por la opinión pública, dada la naturaleza de sus <br>
+            delitos: el robo de gallinas.
+            </p>
+        </div>
+        <br>
+
+        <img src="imagen/Presos.jpg" title="Presos de Tocorón" width="500"/>
+        <br>
+
+        <div class id="Fundación_infocentro">
+            <h2>Fundación infocentro a la ofensiva </h2>
+            <p>Se registra que el plan infocentro tuvo un aumento considerablemente positivo <br> en comparacion de lo que viene atravesando desde hace años, se prevee numeros <br>positivos para la fundacion.    
+            </p>
+        </div>
+        <img src="imagen/Logo infocentro.jpeg" title="Fundación Infocentro"  width="500"/><b>      
+            <br>
+        <a href="https://www.infocentro.gob.ve/" target="_blank">Ir a la pagina web de Infocentro</a>
+        <h6>Created by</h6>
+        <a href="https://github.com/Sharkmy" target="_blank" title="github del primer creador">Sharminys</a> <br>
+        <a href="https://github.com/FanorSmc" target="_blank" title="github del segundo creador">Fanor</a> 
+</body>
+</html>
